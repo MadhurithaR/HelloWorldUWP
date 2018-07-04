@@ -11,7 +11,7 @@
 
     <Grid>
        
-        <TextBlock x:Name="empBookTitle" HorizontalAlignment="Left" Margin="162,94,0,0" Text="Employee Book" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock x:Name="EmpBookTitle" HorizontalAlignment="Left" Margin="162,94,0,0" Text="Employee Book" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
         <HyperlinkButton Content=" Go to Main Page" HorizontalAlignment="Center" Click="HyperlinkButton_Click"/>
     </Grid>
 </UserControl>
