@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +27,28 @@ namespace HelloWorld
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //var button = new Button();
+            //button.Content = "Dynamically created";
+            //HelloGrid.Children.Add(button);
+           
+            this.Output.Text =  this.Output.Text +  "\n"+"Hello " + this.Name.Text;
+            this.Name.Text = "";
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+       
+        private void EmployeeBook_Click(object sender, RoutedEventArgs e)
+        {
+           
+
         }
     }
 }

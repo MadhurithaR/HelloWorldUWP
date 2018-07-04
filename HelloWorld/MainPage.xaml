@@ -8,7 +8,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="HelloGrid" >
+        <TextBlock HorizontalAlignment="Left" Margin="458,77,0,0" Text="Hello World!" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="324" SelectionChanged="TextBlock_SelectionChanged" TextAlignment="Center" FontSize="36" FontWeight="Bold" TextDecorations="Underline"/>
+        <TextBlock HorizontalAlignment="Left" Margin="249,300,0,0" Text="Write your name here" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="250" LineHeight="22" TextAlignment="Center" TextLineBounds="Full" TextTrimming="None" FontSize="20" FontStretch="SemiExpanded" FontStyle="Normal" FontFamily="Arial Black" FontWeight="Medium" />
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="487,272,0,0" Text="" VerticalAlignment="Top" Height="80" Width="250"/>
+        <Button Content="Click Me!" HorizontalAlignment="Left" Margin="487,411,0,0" VerticalAlignment="Top" Width="250" RequestedTheme="Light" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#33054EF7" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="526,475,0,0" Text="SEE YOUR NAMES HERE:" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"/>
+        <TextBlock  x:Name="Output" HorizontalAlignment="Left" Margin="487,500,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="398" Width="243" RequestedTheme="Light" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FF591515"  TextAlignment="Center"/>
+
+        <Button Content="Click here for Employee Book" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="329" Click="EmployeeBook_Click" Margin="1161,918,0,0"/>
 
     </Grid>
 </Page>
